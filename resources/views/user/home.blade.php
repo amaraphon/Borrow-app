@@ -8,7 +8,7 @@
                         <input type="text" class="form-control" name="search"
                                value="{{ Request::get('search') }}">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-secondary">ค้นหา</button>
+                            <button class="btn btn-outline-secondary"><i class="fas fa-search"></i></button>
                         </div>
                     </div>
                 </form>
@@ -16,7 +16,7 @@
             <div class="col-md-2">
                 <div class="d-flex justify-content-end bd-highlight mb-3">
                     <div class="p-2"><a href="/history">ประวัติ</a></div>
-                    <div class="p-2"><a href="/cart">ตระกร้า ( {{ $count_item_in_cart }} )</a></div>
+                    <div class="p-2"><a href="/cart"><i class="fas fa-shopping-cart"></i> ตระกร้า ( {{ $count_item_in_cart }} )</a></div>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
             @if(!$items->isEmpty())
                 @foreach($items as $item)
                     <div class="col-md-3">
-                        <div class="card">
+                        <div class="card mt-4">
                             <img class="card-img-top d-block"
                                  src="{{ url('/uploads/'.$item->image) }}" height="250px" style="object-fit: cover">
                             <div class="card-body">

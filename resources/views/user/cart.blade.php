@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="d-flex justify-content-end bd-highlight mb-3">
             <div class="p-2"><a href="#">ประวัติ</a></div>
-            <div class="p-2"><a href="#">ตระกร้า ( {{ $count_item_in_cart }} )</a></div>
+            <div class="p-2"><a href="#"><i class="fas fa-shopping-cart"></i> ตระกร้า ( {{ $count_item_in_cart }} )</a></div>
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -38,7 +38,7 @@
                     <button type="button" class="btn btn-outline-primary"
                             @click="clearCart">เคลียตระกร้า</button>
                     <button type="button" class="btn btn-success"
-                            @click="createOrder">ยืนยันรายการ</button>
+                            @click="createOrder"><i class="fas fa-check"></i> ยืนยันรายการ</button>
                 </div>
             </div>
         </div>

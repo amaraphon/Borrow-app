@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
     <title>Backoffice</title>
 </head>
@@ -15,7 +16,7 @@
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ url('/back-office/') }}">
+            <a class="navbar-brand" href="{{ url('/back-office/item') }}">
                 Backoffice
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -31,7 +32,7 @@
                 <ul class="navbar-nav ml-auto">
                     @if(\Auth::guard('admin')->user())
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/back-office/item') }}">รายการอุปกรณ์</a>
+                        <a class="nav-link" href="{{ url('/back-office/item') }}"><i class="fas fa-list-ul"></i> รายการอุปกรณ์</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/back-office/order') }}">รายการคำขอ</a>

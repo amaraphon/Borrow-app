@@ -16,7 +16,7 @@ class ItemController extends Controller
     public function index()
     {
         // paginate(1) = หน้าละ 1 ชิ้น
-        $items = Item::orderBy('id','desc')->paginate(2);
+        $items = Item::orderBy('id','desc')->paginate(5);
         return view('backoffice.item-list',compact('items'));
     }
 

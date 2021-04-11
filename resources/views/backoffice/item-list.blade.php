@@ -9,14 +9,14 @@
                         <div class="d-flex justify-content-between">
                             <div>รายการอุปกรณ์</div>
                             <div>
-                                <a href="{{ url('/back-office/item/create') }}" class="btn btn-primary">เพิ่ม</a>
+                                <a href="{{ url('/back-office/item/create') }}" class="btn btn-primary"><i class="fas fa-plus"></i> เพิ่มรายการสินค้า</a>
                             </div>
                         </div>
                     </h5>
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th>#</th>
+                            <th>ลำดับ</th>
                             <th>รูป</th>
                             <th>รหัสอุปกรณ์</th>
                             <th>ชื่ออุปกรณ์</th>
